@@ -13,7 +13,7 @@ class AtbashCipher {
       } else if (code >= 97 && code <= 122) {
         // Lowercase a–z
         var newCode = 122 - (code - 97);
-        buffer.write(String.fromCharCode(newCode));
+        buffer.write(String.frharCode(newCode));
       } else {
         // Non-alphabetic characters stay the same
         buffer.write(ch);
