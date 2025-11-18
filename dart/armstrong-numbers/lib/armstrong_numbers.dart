@@ -20,12 +20,12 @@ class ArmstrongNumbers {
    }
     return t;
   }
-  bool armstrong(int n){
+  bool armstrong(double n){
     double x = order(n);
     double temp = n;
     double sum = 0;
     while (temp) {
-      int r = temp % 10;
+      double r = temp % 10;
       sum += power(r, x);
       temp = temp / 10;
     }
