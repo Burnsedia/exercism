@@ -13,8 +13,7 @@ class ArmstrongNumbers {
        return power(x, y/2) * power(x, y/2);
       }
       return x * power(x, y/2) * power(x, y/2);
-    }
-
+  }
   
   int order(int n) {
     var t = 0;
@@ -35,7 +34,6 @@ class ArmstrongNumbers {
        temp = temp / 10;
       }
       return (sum == n)
-    }
-
+  }
 
 }
