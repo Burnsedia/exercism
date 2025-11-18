@@ -1,8 +1,8 @@
 class ArmstrongNumbers {
   // Put your code here
   String isArmstrongNumber(String input){
-    double NumberImput = double.parse(input)
-    return armstrong(NumberImput)
+    double NumberImput = double.parse(input);
+    return armstrong(NumberImput);
   }
   double power(double x, double y){
       if (y == 0) {
@@ -29,6 +29,6 @@ class ArmstrongNumbers {
       sum += power(r, x);
       temp = temp / 10;
     }
-      return (sum == n)
+      return (sum == n);
   }
 }
