@@ -1,6 +1,6 @@
 class ArmstrongNumbers {
   // Put your code here
-  double isArmstrongNumber(String input){
+  bool isArmstrongNumber(String input){
     double NumberImput = double.parse(input);
     return armstrong(NumberImput);
   }
