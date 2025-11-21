@@ -4,6 +4,7 @@ class ArmstrongNumbers {
     double NumberImput = double.parse(input);
     return armstrong(NumberImput);
   }
+  // determin the power to raise the digits to 
   double power(double x, double y){
       if (y == 0) {
        return 1; 
@@ -13,6 +14,7 @@ class ArmstrongNumbers {
       }
       return x * power(x, y/2) * power(x, y/2);
   }
+  //
   double order(double n) {
     double t = 0;
     for ( ; n != 0 ; n = n / 10 ) {
@@ -20,6 +22,7 @@ class ArmstrongNumbers {
    }
     return t;
   }
+  // determin if the givent numer is an armstrong number
   bool armstrong(double n){
     double x = order(n);
     double temp = n;
