@@ -1,11 +1,11 @@
 class ArmstrongNumbers {
   // Put your code here
-  String isArmstrongNumber(String input){
-    int NumberImput = int.parse(input)
-    return armstrong(NumberImput)
+  bool isArmstrongNumber(String input){
+    double NumberImput = double.parse(input);
+    return armstrong(NumberImput);
   }
-  
-  int power(int x, int y){
+  // determin the power to raise the digits to 
+  double power(double x, double y){
       if (y == 0) {
        return 1; 
       }
@@ -13,29 +13,25 @@ class ArmstrongNumbers {
        return power(x, y/2) * power(x, y/2);
       }
       return x * power(x, y/2) * power(x, y/2);
-    }
-
-  
-  int order(int n) {
-    var t = 0;
-    for ( ; n != 0 ; n = n ~/ 10 ) {
+  }
+  //
+  double order(double n) {
+    double t = 0;
+    for ( ; n != 0 ; n = n / 10 ) {
       t++;
    }
-
     return t;
   }
-
-  bool armstrong(int n){
-      int x = order(n);
-      int temp = n;
-      int sum = 0;
-      while (temp) {
-       int r = temp % 10;
-       sum += power(r, x);
-       temp = temp / 10;
-      }
-      return (sum == n)
+  // determin if the givent numer is an armstrong number
+  bool armstrong(double n){
+    double x = order(n);
+    double temp = n;
+    double sum = 0;
+    while (temp > 0) {
+      double r = temp % 10;
+      sum += power(r, x);
+      temp = temp / 10;
     }
-
-
+      return (sum == n);
+  }
 }
