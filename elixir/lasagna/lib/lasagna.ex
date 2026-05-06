@@ -9,7 +9,7 @@ defmodule Lasagna do
 
   # Please define the 'alarm/0' function
   def expected_minutes_in_oven() do
-    pass 
+    40
   end
   def remaining_minutes_in_oven() do
    pass 
