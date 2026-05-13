@@ -29,7 +29,8 @@ def bake_time_remaining(elapsed_bake_time) -> int:
     based on the `EXPECTED_BAKE_TIME`.
     """
     timeleft = EXPECTED_BAKE_TIME - elapsed_bake_time
-    return int(timeleft)
+
+    return timeleft
 
 #TODO (student): Define the 'preparation_time_in_minutes()' function below.
 # To avoid the use of magic numbers (see: https://en.wikipedia.org/wiki/Magic_number_(programming)), you should define a PREPARATION_TIME constant.
