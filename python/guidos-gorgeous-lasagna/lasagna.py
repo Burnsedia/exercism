@@ -66,7 +66,7 @@ def elapsed_time_in_minutes(number_of_layers, elapsed_bake_time) -> int:
     the total elapsed minutes spent cooking (preparing + baking).
     """
 
-    time = bake_time_remaining(elapsed_bake_time) 
+    time = elapsed_bake_time
 
     layers = preparation_time_in_minutes(number_of_layers)
     
