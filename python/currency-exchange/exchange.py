@@ -153,8 +153,8 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
     determining the exchange rate plus the spread.
     """
     effective_rate = exchange_rate + (exchange_rate * (spread/100))
+    total_amount = exchange_money(budget, effective_rate)
     
-    total_amount = exchange_money(budget,effective_rate )
+    return total_amount
 
-    exchange_amoubt = get_number_of_bills(total_amount, denomination)
 
