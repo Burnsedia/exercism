@@ -154,6 +154,6 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
     """
     effective_rate = exchange_rate + (exchange_rate * (spread/100))
     
-    total_amount = exchange_money(budget=budget,exchange_rate=effective_rate )
+    total_amount = exchange_money(budget,effective_rate )
 
-    return get_leftover_of_bills(amount=total_amount,denomination=denomination)
+    return get_leftover_of_bills(total_amount,denomination)
