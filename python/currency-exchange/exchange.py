@@ -156,4 +156,5 @@ def exchangeable_value(budget, exchange_rate, spread, denomination):
     
     total_amount = exchange_money(budget,effective_rate )
 
-    return get_leftover_of_bills(total_amount,denomination)
+    exchange_amoubt = get_number_of_bills(total_amount, denomination)
+
